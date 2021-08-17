@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://www.rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
@@ -46,6 +46,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
+gem 'devise', '~> 4.8'
 gem 'friendly_id', '~> 5.4.0'
-
