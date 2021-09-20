@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DevcampPortfolio</title>
+    <title>Devcamp Portfolio | My Portfolio Website</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,6 +13,10 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+    <div><%= link_to "Home", root_path %></div>
+    <div><%= link_to "About", about_path %></div>
+    <div><%= link_to "Contact", contact_path %></div>
 
     <% if current_user.is_a?(User) %>
      <p>Seja bem Vindo <%= link_to current_user.name, edit_user_registration_path %> </p>
